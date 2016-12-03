@@ -1,39 +1,33 @@
 #
 #   Navigation to the left › side: left
 #
-- title: Start
+- title: Home
   url: "/"
   side: left
 
-- title: "Dropdown Menu"
-  url: "#"
+- title: "Layers"
+  url: "/manual/layers.html"
   side: left
-  dropdown:
-  - title: "Dropdown Menu 1"
-    url: "#"
-  - title: "Dropdown Menu 2"
-    url: "#"
-  - title: "Dropdown Menu 3"
-    url: "#"
 
-- title: Blog
+- title: "Blog"
   url: "/blog/"
   side: left
-  dropdown:
-  - title: "Blog Archive"
-    url: "/blog/archive/"
+
+- title: "Neural.Vision"
+  url: "http://neural.vision"
+  side: left
 
 #
 #   Navigation to the right › side: right
 #
-- title: "Info"
-  url: "/info/"
-  side: right
+# - title: "Info"
+#   url: "/info/"
+#   side: right
 
 - title: "Search"
   url: "/search/"
   side: right
 
 - title: "Contact"
-  url: "/contact/"
+  url: "http://neural.vision/contact/"
   side: right

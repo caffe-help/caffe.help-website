@@ -8,28 +8,23 @@
 #                                                 /____/        
 #
 # Title of your website
-title: "Feeling Responsive"
-
+title: "caffe.help"
 
 # The slogan describes your website and is used on homepage in <title> and other important places
-slogan: "A Flexible Theme for Jekyll"
+slogan: 'Help for the caffe framework'
 
 
 # The description is used on homepage and in the footer to quickly describe your website. Use a maximum of 150 characters for SEO-purposes.
-description: "The description is used on homepage and in the footer to quickly describe your website. Use a maximum of 150 characters for SEO-purposes."
+description: 'This website is intended to help make caffe documentation more presentable, while also improving the documentation in caffe github branch.'
 
 # Main author of the website
 # See > authors.yml
-author: phlow
+author: Jonathan
 
 # This URL is the main address for absolute links. Don't include a slash at the end.
 #
-url: 'https://phlow.github.io/feeling-responsive'
+url: 'http://caffe.help'
 baseurl: ''
-
-# This is for the editing function in _/includes/improve_content
-# Leave it empty if your site is not on GitHub/GitHub Pages
-improve_content: https://github.com/Phlow/feeling-responsive/edit/gh-pages
 
 # This URL points directly to the images directory making
 # things easier to link to images in posts and templates. It needs a slash at the end.
@@ -37,26 +32,19 @@ improve_content: https://github.com/Phlow/feeling-responsive/edit/gh-pages
 # Example: <img src="{{ site.urlimg }}{{ post.image.title }}" />
 # Markdown-Example for posts ![Image Text]({{ site.urlimg }}image.jpg)
 #
-urlimg: 'https://phlow.github.io/feeling-responsive/images/'
+urlimg: 'http://caffe.help/images/'
 
 
 # Logo size is 600x80 pixels
-logo: "logo.png"
-
-
-# Paginates all X entries
-paginate: 5
-
-
-# Pagination path › Important for blog page in /blog/ to work
-paginate_path: "blog/page:num"
+# logo: "logo.png"
 
 
 # Theme works best with Kramdown (using the table of contents function)
 markdown: kramdown
-permalink: /:categories/:title/
+# permalink: /:categories/:title/
+# post_dirs: true
 highlight: rouge
-gems: [jekyll-paginate]
+# gems: [jekyll-paginate]
 excerpt_separator: "<!--more-->"
 include: ['.htaccess']
 # Exclude these files from your production _site
@@ -75,13 +63,13 @@ language: "en"
 
 # Used › default.html front-matter and compress.html
 # Options › http://jch.penibelst.de
-compress_html:
-  clippings: all
-  comments: ["<!-- ", " -->"]
-  endings: all
-  profile: false
-  ignore:
-    envs: [development]
+# compress_html:
+#   clippings: all
+#   comments: ["<!-- ", " -->"]
+#   endings: all
+#   profile: false
+#   ignore:
+#     envs: [development]
 
 
 #
@@ -96,13 +84,31 @@ compress_html:
 defaults:
   -
     scope:
+      path: "manual"  # an empty string here means all files in the project
+    values:
+      layout: "default"
+      show_meta: false  # Hide metadata for all pages
+      sidebar: "left"  	# Possible values › left, right › by default there will be no sidebar
+      comments: true
+      author: bvlc     # Default author for pages
+  -
+    scope:
+      path: "tutorial"  # an empty string here means all files in the project
+    values:
+      layout: "default"
+      show_meta: false  # Hide metadata for all pages
+      sidebar: "left"  	# Possible values › left, right › by default there will be no sidebar
+      comments: true
+      author: bvlc     # Default author for pages
+  -
+    scope:
       path: "" 				# an empty string here means all files in the project
       type: "pages"
     values:
       show_meta: false 	# Hide metadata for all pages
       # sidebar:    		# Possible values › left, right › by default there will be no sidebar
       comments: false
-      author: phlow     # Default author for pages
+      author: jonathan     # Default author for pages
   -
     scope:
       path: ""
@@ -111,7 +117,7 @@ defaults:
       show_meta: true   # Show metadata for all posts
       # sidebar:        # Possible values › left, right › by default there will be no sidebar
       comments: false
-      author: phlow     # Default author for posts
+      author: jonathan     # Default author for posts
 
 
 
@@ -133,7 +139,7 @@ defaults:
 #   ___/ / /___/ /_/ /
 #  /____/_____/\____/    Verify Website to Webmaster Tools
 
-# google_author:             ""
+# google_author:             "" # no longer used?
 # google_site_verification:  ""
 # bing_webmastertools_id:    ""
 # alexa_verify_id:           ""
@@ -195,7 +201,7 @@ msapplication_tilecolor:                "#fabb00"
 #
 # used in _includes/comments
 
-# disqus_shortname: 
+disqus_shortname: caffe-help
 
 
 #      _____
@@ -219,7 +225,7 @@ sass:
 #
 # used in _includes/footer_scripts
 
-# google_analytics_tracking_id: 
+google_analytics_tracking_id: "UA-88403489-1"
 
 
 
