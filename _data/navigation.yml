@@ -9,9 +9,9 @@
   url: "/manual/layers.html"
   side: left
 
-- title: "Blog"
-  url: "/blog/"
-  side: left
+# - title: "Blog"
+#   url: "/blog/"
+#   side: left
 
 - title: "Neural.Vision"
   url: "http://neural.vision"
@@ -20,9 +20,9 @@
 #
 #   Navigation to the right › side: right
 #
-# - title: "Info"
-#   url: "/info/"
-#   side: right
+- title: "About"
+  url: "/about/"
+  side: right
 
 - title: "Search"
   url: "/search/"

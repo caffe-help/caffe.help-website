@@ -25,12 +25,15 @@ $body-bg: 			#fdfdfd;
    https://color.adobe.com/de/Flat-Design-Colors-v2-color-theme-4341903/
 ------------------------------------------------------------------- */
 
-$ci-1: #334D5C;		// dark turquoise
-$ci-2: #45B29D;		// turquoise
+// $ci-1: #334D5C;		// dark turquoise
+$ci-1: #2D1204;		// dark brown
+// $ci-2: #45B29D;		// turquoise
+$ci-2: #2D1204;		// brown
 $ci-3: #EFC94C;		// yellow
 $ci-4: #E27A3F;		// orange
 $ci-5: #DF4949;		// red
-$ci-6: #A1D044;     // green
+//$ci-6: #A1D044;     // green
+$ci-6: #c6b8a7; // light brown
 
 
 
@@ -49,7 +52,10 @@ $info-color: $ci-1;
 /* Grey Scale
 ------------------------------------------------------------------- */
 
-$grey-1: #E4E4E4;
+// $grey-1: #E4E4E4;
+// $grey-1: #d8d0cd;
+$grey-1: #ede9e8;
+//$grey-1: scale-color($secondary-color, $lightness: 80%);
 $grey-2: #D7D7D7;
 $grey-3: #CBCBCB;
 $grey-4: #BEBEBE;
@@ -118,7 +124,7 @@ $subfooter-link-color: $grey-8;
 /* Code
 ------------------------------------------------------------------- */
 
-$code-background-color: scale-color($secondary-color, $lightness: 70%);
+$code-background-color: scale-color($secondary-color, $lightness: 90%);
 
 $highlight-background: #ffffff;
 $highlight-comment: #999988;

@@ -11,7 +11,7 @@ widget1:
   title: "Caffe Layers Doc"
   url: 'http://caffe.help/manual/layers.html'
   image: 'http://caffe.help/images/x9ghkhbjiau-jazmin-quaynor.jpg'
-  text: ''
+  text: 'The revamped Caffe layers catalogue. Includes all of the layers in the main BVLC repository.'
 # widget2:
 #   title: "Widget 2"
 #   url: 'http://domain.de/must-be-absolut-url-like-this-one/'
