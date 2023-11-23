@@ -1,5 +1,5 @@
 
-This repository contains the code for the website http://caffe.help, a website
+This repository contains the code for the website caffe.help, a website
 intended to improve the documentation for the caffe deep learning framework.
 
 It is based off of the
